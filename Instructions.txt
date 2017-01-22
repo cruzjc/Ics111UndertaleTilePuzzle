@@ -1,0 +1,22 @@
+Red tiles are impassible!
+You cannot walk on them!
+Yellow tiles are electric!
+They will electrocute you!
+Green tiles are alarm tiles!
+If you step on them... 
+you will have to fight a monster!!
+Orange-tiles are orange-scented.
+They will make you smell delicious!
+Blue tiles are water tiles.
+Swim through them if you like, but...
+if you smell like oranges! the pirahnas will bite you.
+Also, if a blue tile is next to a, yellow tile, 
+the water will also zap you!
+Purple tiles are slippery! You will slide to the next tile!
+However, the slippery soap... 
+smells like lemons!!
+Which pirahnas do not like!
+Purple and blue are okay!
+Finally, pink tiles.
+They don't do anything.
+Step on them all you like.

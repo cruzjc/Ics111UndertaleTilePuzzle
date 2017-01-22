@@ -1,0 +1,119 @@
+  
+  Undertale
+  Notes
+  
+//key bindings
+/*
+40 down arrow
+39 right arrow
+38 up arrow
+37 left arrow
+27 escape
+17 control
+16 shift
+10 enter
+ */
+ 
+ //fonts
+8bitoperator
+comic sans
+PAPYRUS
+DotumChe
+CRYPT OF TOMORROW
+MARS NEEDS CUNNILINGUS
+  
+  
+  
+  http://undertale.wikia.com/wiki/Multicolor_Tile_Puzzle
+  
+ Red tiles are impassible! You cannot walk on them! 
+ Yellow tiles are electric! They will electrocute you! 
+ Green tiles are alarm tiles! If you step on them... you will have to fight a monster!! 
+ Orange-tiles are orange-scented. They will make you smell delicious! 
+ Blue tiles are water tiles. Swim through them if you like, but... if you smell like oranges! the pirahnas will bite you. Also, if a blue tile is next to a, yellow tile, the water will also zap you! 
+ Purple tiles are slippery! You will slide to the next tile! However, the slippery soap... smells like lemons!! Which pirahnas do not like! 
+ Purple and blue are okay! 
+ Finally, pink tiles. They don't do anything. Step on them all you like.
+  
+  
+  		//0=no flavor
+		//1=oranges
+		//2=lemon
+  
+  
+  
+  
+  Code to help copy bytes
+  
+  public class CopyBytes {
+    public static void main(String[] args) throws IOException {
+ 
+        FileInputStream in = null;
+        FileOutputStream out = null;
+ 
+        try {
+            in = new FileInputStream("xanadu.txt");
+            out = new FileOutputStream("outagain.txt");
+            int c;
+ 
+            while ((c = in.read()) != -1) {
+                out.write(c);
+            }
+        } finally {
+            if (in != null) {
+                in.close();
+            }
+            if (out != null) {
+                out.close();
+            }
+        }
+    }
+}
+
+
+//Code hoarding================================================
+
+		Scanner sc;
+		FileWriter fw;
+		FileReader fr;
+		FileInputStream fIS;
+		InputStreamReader iSR;
+		BufferedReader bR;
+		
+		
+		
+		String store;
+		int istore;
+		// TODO Auto-generated method stub
+
+		String filename="Pr3.pdf";
+		//String filename="test.txt";
+		
+		sc=new Scanner(new File(filename));
+		fr=new FileReader(new File(filename));
+		fw=new FileWriter("encrypted"+filename);
+		fIS=new FileInputStream(new File(filename));
+		//iSR=new InputStreamReader();
+		bR=new BufferedReader(new InputStreamReader(System.in));
+		
+		while(true){
+			//store=sc.nextLine();
+			//d.o(store);
+			
+			store=fIS.toString();
+			d.o(store);
+			
+			try {
+				fw.write(store+"\n");
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			//System.out.print(line);
+		}
+		
+		
+		//sc.close();
+		//fw.close();
+		//d.o("Completed");
+	}
